@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "C:/Native-add-to-app/AndroidApp/app/flutter-repo/repo" }
+        maven { url "https://storage.googleapis.com/download.flutter.io" }
+    }
+}
+
+rootProject.name = "Android App"
+include ':app'
